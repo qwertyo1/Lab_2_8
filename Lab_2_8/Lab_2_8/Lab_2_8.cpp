@@ -29,6 +29,10 @@ int main()
 	for (int i = 0; i < n; i++) {
 		projects[i].showData();
 	}
+	int nn = 0;
+	cout << "Укажите номер строки, с которой желаете получить данные: ";
+	cin >> nn;
+	cout << "Год: " << projects[nn].getYear() << endl << "Научный руководитель: " << projects[nn].getAdviser() << endl << "Диаметр антенны (м): " << projects[nn].getDia() << endl << "Рабочая частота (МГц): " << projects[nn].getClockRate() << endl;
 	system("pause");
 	delete[]projects;
     return 0;

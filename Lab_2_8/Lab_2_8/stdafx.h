@@ -18,15 +18,10 @@ private:
 	unsigned int clockRate;
 
 public:
-	void setData(int pses_year, char* pses_adviser, int pses_dia, int pses_clockRate)
-	{
-		year = pses_year;
-		strcpy(adviser, pses_adviser);
-		dia = pses_dia;
-		clockRate = pses_clockRate;
-	}
-	void showData()
-	{
-		cout << " |" << setw(7) << year << "|" << setw(24) << adviser << "|" << setw(23) << dia << "|" << setw(25) << clockRate << "|" << endl;
-	}
+	void setData(int pses_year, char* pses_adviser, int pses_dia, int pses_clockRate);
+	void showData();
+	unsigned int getYear();
+	char* getAdviser();
+	unsigned int getDia();
+	unsigned int getClockRate();
 };
